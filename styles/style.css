@@ -322,7 +322,7 @@ a {
   text-indent: 1rem;
   border: radius 1rem;
   width: 90%;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: 0.2s ease-in-out;
 }
 .form select {
@@ -337,10 +337,19 @@ a {
   background-color: var(--Purple);
   color: var(--White);
 }
-.form-button{
+.form-button {
   border: none;
   color: var(--Purple);
-  
+  background-color: var(--Yellow);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.2 ease-in-out;
+}
+.form-button:hover {
+  background-color: var(--Purple);
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
