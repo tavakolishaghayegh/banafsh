@@ -313,6 +313,35 @@ a {
   background-color: var(--Purple);
   color: var(--White);
 }
+.input {
+  border: none;
+  background-color: var(--Yellow);
+  color: var(--Purple);
+  padding: 2rem;
+  box-sizing: border-box;
+  text-indent: 1rem;
+  border: radius 1rem;
+  width: 90%;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.form select {
+  padding: 1.6rem 2rem;
+}
+
+.input::placeholder {
+  color: var(--Purple);
+}
+.input:focus {
+  outline: none;
+  background-color: var(--Purple);
+  color: var(--White);
+}
+.form-button{
+  border: none;
+  color: var(--Purple);
+  
+}
 
 @media only screen and (max-width: 768px) {
   .footer {
