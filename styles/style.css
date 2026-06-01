@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -312,6 +313,14 @@ a {
 .contact-us-item address:hover {
   background-color: var(--Purple);
   color: var(--White);
+}
+.float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--White);
+  border: solid var(--Purple);
+  border-radius: 50%;
 }
 .input {
   border: none;
