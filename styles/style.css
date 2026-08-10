@@ -390,6 +390,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--popup);
+  animation: fadeIn 1s;
 }
 .popup-message {
   width: 50%;
@@ -404,4 +405,14 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
