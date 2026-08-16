@@ -37,10 +37,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  background-color: var(--Nav-button);
+
+  align-items: center;
 }
 .nav-item {
   color: var(--White);
+  background-color: var(--Nav-button);
   margin: 0.5rem;
   font-size: 2rem;
   padding: 0.5rem 1rem;
@@ -50,6 +52,16 @@ body {
 .nav-item:hover {
   background-color: var(--Nav-button);
   transform: translate(0.2rem);
+}
+
+.burger {
+  background-color: var(--White);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 1.5rem;
+  padding: 0.25rem;
+  display: none;
 }
 
 .logo {
@@ -106,15 +118,30 @@ a {
     background: url(../images/banner-mobile.png);
     background-size: cover;
   }
-  .navbar {
-    flex-direction: column;
+}
+
+.nav-item {
+  display: none;
+}
+.nav-item-show {
+  display: flex;
+  animation: burger 1s;
+}
+@keyframes burger {
+  from {
+    opacity: 0;
   }
-  .nav-item {
-    width: max-content;
+  to {
+    opacity: 1;
   }
-  .logo {
-    width: 20rem;
-  }
+}
+
+.burger {
+  display: flex;
+}
+
+.logo {
+  width: 20rem;
 }
 
 /* Menu */
