@@ -23,3 +23,25 @@ function menu() {
   }
 }
 burger.addEventListener("click", menu);
+
+// comments
+const comments = document.querySelectorAll(".comment-item");
+
+const observer = new IntersectionObserver(
+  function (items) {
+    for (const item of items) {
+      if (item.isIntersecting) {
+        item.target.classList.add("comment-item-animation");
+      } else {
+        item.target.classList.remove("comment-item-animation");
+      }
+    }
+  },
+  {
+    threshold: 0.1,
+  },
+);
+
+for (const comment of comments) {
+  observer.observe(comment);
+}
